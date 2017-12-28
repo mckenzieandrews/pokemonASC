@@ -4,12 +4,24 @@ var pokemons = [];
 var Pokemon = class Pokemon {
  constructor(name, type, hp, def, atk, legend) {
 
-    typeof name === "string";
-    typeof type === "string";
-    typeof hp ==="number";
-    typeof def === "number";
-    typeof atk=== "number";
-    typeof legend=== "boolean";
+   if (typeof name !== "string"){
+     throw new UserException('Name should be a string.');
+    }
+   if (typeof type !== "string"){
+     throw new UserException('Type should be a string.');
+    }
+   if (typeof hp !== "number"){
+     throw new UserException('Hp should be a number.');
+    }
+   if (typeof def!== "number"){
+     throw new UserException('Def should be a number.');
+    }
+   if (typeof atk!== "number"){
+     throw new UserException('Atk should be a number.');
+    }
+   if (typeof legend!== "boolean"){
+     throw new UserException('Legend should be a boolean.');
+    }
              
     this.name = name;
     this.type= type;
