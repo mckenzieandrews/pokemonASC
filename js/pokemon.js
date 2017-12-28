@@ -37,6 +37,10 @@ var Pokemon = class Pokemon {
   }
   
   attack(Pokemon poke){
+  if (typeof poke!== "Pokemon"){
+     throw new UserException('Please enter a Pokemon.');
+  }
+   
   poke.sethp(poke.hp- (this.atk-poke.def);
   return poke.hp;    
   }
