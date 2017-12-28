@@ -30,8 +30,7 @@ var Pokemon = class Pokemon {
     this.atk = atk;
     this.legend= legend;
    
-    //how do you use an array to keep track of all the pokemons for all() method?
-    //need to fix!
+    //An array to keep track of all the pokemons for all() method
     var p = new Pokemon(name);
     pokemons.push(p);  
   }
@@ -57,7 +56,7 @@ var Pokemon = class Pokemon {
   }
   
   
- //return all the pokemons-- does this work? idk!?! 
+ //return all the pokemons
  all(){
    var i;
    var allThePokes="";
