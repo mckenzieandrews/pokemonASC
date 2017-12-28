@@ -2,19 +2,22 @@
 var pokemons = [];
 
 var Pokemon = class Pokemon {
-  constructor(typeof name === "string", 
-               typeof type === "string", 
-               typeof hp ==="number", 
-               typeof def === "number", 
-               typeof atk=== "number", 
-               typeof legend=== "boolean") {
+ constructor(name, type, hp, def, atk, legend) {
+
+    typeof name === "string";
+    typeof type === "string";
+    typeof hp ==="number";
+    typeof def === "number";
+    typeof atk=== "number";
+    typeof legend=== "boolean";
+             
     this.name = name;
     this.type= type;
     this.hp = hp;
-    this.def= def; 
-    this.atk = atk; 
+    this.def= def;
+    this.atk = atk;
     this.legend= legend;
-    
+   
     //how do you use an array to keep track of all the pokemons for all() method?
     //need to fix!
     var p = new Pokemon(name);
