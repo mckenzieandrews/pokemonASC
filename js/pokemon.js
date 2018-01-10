@@ -1,7 +1,7 @@
 // Define Pokemon class here
 var pokemons = [];
 
-var Pokemon = class Pokemon {
+class Pokemon {
  constructor(name, type, hp, def, atk, legend) {
 
    if (typeof name !== "string"){
@@ -35,8 +35,8 @@ var Pokemon = class Pokemon {
     pokemons.push(p);  
   }
   
-  attack(Pokemon poke){
-  if (typeof poke!== "Pokemon"){
+  attack(poke){
+  if (instanceof poke!== "Pokemon"){
      throw new UserException('Please enter a Pokemon.');
   }
    
