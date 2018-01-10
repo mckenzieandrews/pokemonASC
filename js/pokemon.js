@@ -5,22 +5,22 @@ class Pokemon {
  constructor(name, type, hp, def, atk, legend) {
 
    if (typeof name !== "string"){
-     throw new UserException('Name should be a string.');
+     throw new TypeError('Name should be a string.');
     }
    if (typeof type !== "string"){
-     throw new UserException('Type should be a string.');
+     throw new TypeError('Type should be a string.');
     }
    if (typeof hp !== "number"){
-     throw new UserException('Hp should be a number.');
+     throw new TypeError('Hp should be a number.');
     }
    if (typeof def!== "number"){
-     throw new UserException('Def should be a number.');
+     throw new TypeError('Def should be a number.');
     }
    if (typeof atk!== "number"){
-     throw new UserException('Atk should be a number.');
+     throw new TypeError('Atk should be a number.');
     }
    if (typeof legend!== "boolean"){
-     throw new UserException('Legend should be a boolean.');
+     throw new TypeError('Legend should be a boolean.');
     }
              
     this.name = name;
@@ -40,11 +40,11 @@ class Pokemon {
      throw new UserException('Please enter a Pokemon.');
   }
    
-  poke.sethp(poke.hp- (this.atk-poke.def);
+  poke.sethp(poke.hp- (this.atk-poke.def));
   return poke.hp;    
   }
  
- aliveCheck(}{
+ aliveCheck(){
     //if hp is greater than 0, return true
  if(this.hp> 0){
     return true; 
